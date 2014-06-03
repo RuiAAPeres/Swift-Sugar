@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7EDA2DA193E430C0048EAF3 /* SwiftSugarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2D9193E430C0048EAF3 /* SwiftSugarTests.swift */; };
+		C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */; };
 		C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2E4193E44390048EAF3 /* AppDelegate.swift */; };
 		C7EDA2EA193E44390048EAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EDA2E6193E44390048EAF3 /* Images.xcassets */; };
-		C7EDA2EB193E44390048EAF3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7EDA2E8193E44390048EAF3 /* Info.plist */; };
-		C7EDA2EE193E44500048EAF3 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */; };
+		C7EDA31C193E48CC0048EAF3 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,7 @@
 		C7EDA2C6193E430C0048EAF3 /* SwiftSugar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSugar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D3193E430C0048EAF3 /* SwiftSugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D8193E430C0048EAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7EDA2D9193E430C0048EAF3 /* SwiftSugarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSugarTests.swift; sourceTree = "<group>"; };
+		C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		C7EDA2E4193E44390048EAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7EDA2E6193E44390048EAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7EDA2E8193E44390048EAF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +84,7 @@
 		C7EDA2D6193E430C0048EAF3 /* SwiftSugarTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7EDA2D9193E430C0048EAF3 /* SwiftSugarTests.swift */,
+				C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */,
 				C7EDA2D7193E430C0048EAF3 /* Supporting Files */,
 			);
 			path = SwiftSugarTests;
@@ -210,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EDA2EB193E44390048EAF3 /* Info.plist in Resources */,
 				C7EDA2EA193E44390048EAF3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */,
-				C7EDA2EE193E44500048EAF3 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EDA2DA193E430C0048EAF3 /* SwiftSugarTests.swift in Sources */,
+				C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */,
+				C7EDA31C193E48CC0048EAF3 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftSugar/Info.plist;
+				INFOPLIST_FILE = "SwiftSugar/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftSugar/Info.plist;
+				INFOPLIST_FILE = "SwiftSugar/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +362,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = SwiftSugarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
@@ -380,6 +379,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = SwiftSugarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
@@ -407,6 +407,7 @@
 				C7EDA2DF193E430C0048EAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7EDA2E0193E430C0048EAF3 /* Build configuration list for PBXNativeTarget "SwiftSugarTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				C7EDA2E2193E430C0048EAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

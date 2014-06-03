@@ -29,6 +29,7 @@ extension Int {
     
     func downTo(lowerLimit:Int, doTask:(number:Int) -> ()){
         var placeHolder = self
+        
         for var i : Int = lowerLimit; i < placeHolder; placeHolder-- {
             doTask(number: placeHolder)
         }
