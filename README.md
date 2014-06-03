@@ -6,7 +6,7 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 
 ## Documentation
 
-**Int**
+**Int extensions** 
 
 ``` swift
 3.times({
