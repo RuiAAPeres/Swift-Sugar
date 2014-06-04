@@ -40,3 +40,8 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 // 1
 ```
 
+**Array functions** 
+``` swift
+take([1,2,3,4],3)
+// [1,2,3]
+```
