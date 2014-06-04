@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73A0DDC193E7D5E003D57C9 /* ArrayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A0DDB193E7D5E003D57C9 /* ArrayFunctions.swift */; };
+		C758575C193FDB8400C8C937 /* ArrayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73A0DDB193E7D5E003D57C9 /* ArrayFunctions.swift */; };
 		C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */; };
 		C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2E4193E44390048EAF3 /* AppDelegate.swift */; };
 		C7EDA2EA193E44390048EAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EDA2E6193E44390048EAF3 /* Images.xcassets */; };
@@ -24,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73A0DDB193E7D5E003D57C9 /* ArrayFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFunctions.swift; sourceTree = "<group>"; };
 		C7EDA2C6193E430C0048EAF3 /* SwiftSugar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSugar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D3193E430C0048EAF3 /* SwiftSugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D8193E430C0048EAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */,
+				C73A0DDB193E7D5E003D57C9 /* ArrayFunctions.swift */,
 			);
 			path = SwiftSugar;
 			sourceTree = "<group>";
@@ -228,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */,
+				C73A0DDC193E7D5E003D57C9 /* ArrayFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +242,7 @@
 			files = (
 				C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */,
 				C7EDA31C193E48CC0048EAF3 /* IntExtensions.swift in Sources */,
+				C758575C193FDB8400C8C937 /* ArrayFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
