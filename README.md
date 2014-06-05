@@ -45,3 +45,49 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 take([1,2,3,4],3)
 // [1,2,3]
 ```
+
+
+**String functions** 
+``` swift
+var myString : String = "Swift programming"
+
+myString.length
+"Swift programming".length
+// 17
+
+myString[1]!
+// w
+
+myString[-4]!
+// m
+
+String.join(["S","w","i"])
+//Swi
+
+String.join("S","w","i","f","t")
+//Swift
+
+
+myString.split()
+//["Swift", "programming"]
+
+myString.split(delimiter:"r")
+//["Swift p", "og", "amming"]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
