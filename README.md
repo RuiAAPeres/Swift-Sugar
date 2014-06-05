@@ -55,10 +55,10 @@ myString.length
 "Swift programming".length
 // 17
 
-myString[1]!
+myString[1]
 // w
 
-myString[-4]!
+myString[-4]
 // m
 
 String.join(["S","w","i"])
