@@ -17,6 +17,7 @@ extension String {
     }
     }
 
+
     static func join(strings: String...)->String
     {
         var result: String=""
@@ -26,6 +27,7 @@ extension String {
         return result
     }
 
+
     static func join(array: Array<String>)->String
     {
         var result: String=""
@@ -34,6 +36,7 @@ extension String {
         }
         return result
     }
+
 
     func split(delimiter:Character = " ") -> String[]{
 
@@ -53,9 +56,62 @@ extension String {
         if !stringIterator.isEmpty{
             resultArray.append(stringIterator)
         }
-        return resultArray;
+        return resultArray
     }
 
+
+    func toCharacterArray()->Character[]{
+        var resultArray = Character[]()
+
+        for char in self{
+            resultArray.append(char)
+        }
+
+        return resultArray
+    }
+
+
+    func indexOfString(string : String)->Int?{
+        if countElements(self)==0 || countElements(string)==0 {
+            return nil
+        }
+
+        if countElements(self) < countElements(string){
+            return nil
+        }
+
+        var numberIt : Int = 0
+        var selfCharArray = self.toCharacterArray()
+        var stringCharArray = string.toCharacterArray()
+
+        for (index,charOut) in enumerate(selfCharArray){
+
+            for charIn in stringCharArray{
+
+                if charIn==selfCharArray[index+numberIt] {
+                    numberIt++
+                    if numberIt==countElements(string){
+                        return index
+                    }
+                }
+                else{
+                    numberIt=0
+                    break
+                }
+            }
+        }
+        return nil
+    }
+
+
+    func containsString(string:String) -> Bool{
+        if let index = indexOfString(string){
+            return true
+        }
+        else{
+            return false
+        }
+    }
 }
 
 extension String{
@@ -74,7 +130,7 @@ extension String{
                     return String(charValue)
                 }
             }
-            return nil;
+            return nil
     }
 
 
@@ -90,7 +146,7 @@ extension String{
                 return nil
             }
             else{
-                return returnString;
+                return returnString
             }
     }
 }
