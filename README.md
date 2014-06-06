@@ -67,12 +67,23 @@ String.join(["S","w","i"])
 String.join("S","w","i","f","t")
 //Swift
 
-
 myString.split()
 //["Swift", "programming"]
 
 myString.split(delimiter:"r")
 //["Swift p", "og", "amming"]
+
+
+
+myString.containsString("prog")
+// true
+
+myString.indexOfString("mm")
+// 12
+
+"Swift".toCharacterArray()
+//["S","w","i","f","t"]
+
 ```
 
 
