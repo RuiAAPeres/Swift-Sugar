@@ -42,23 +42,20 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 
 **Array functions** 
 ``` swift
-take([1,2,3,4],3)
+[1,2,3,4].take(3)
 // [1,2,3]
 ```
 
-
 **String functions** 
-``` swift
-var myString : String = "Swift programming"
+```
 
-myString.length
 "Swift programming".length
 // 17
 
-myString[1]
+"Swift programming"[1]
 // w
 
-myString[-4]
+"Swift programming"[-4]
 // m
 
 String.join(["S","w","i"])
@@ -67,23 +64,23 @@ String.join(["S","w","i"])
 String.join("S","w","i","f","t")
 //Swift
 
-myString.split()
+"Swift programming".split()
 //["Swift", "programming"]
 
-myString.split(delimiter:"r")
+"Swift programming".split(delimiter:"r")
 //["Swift p", "og", "amming"]
 
-
-
-myString.containsString("prog")
+"Swift programming".containsString("prog")
 // true
 
-myString.indexOfString("mm")
+"Swift programming".indexOfString("mm")
 // 12
 
-"Swift".toCharacterArray()
-//["S","w","i","f","t"]
+"Swift programming".toCharacterArray()
+//["S","w","i","f","t"," ","p","r","o","g","r","a","m","m","i","n","g",]
 
+"Swift programming".reverse()
+//gnimmargorp tfiwS
 ```
 
 
