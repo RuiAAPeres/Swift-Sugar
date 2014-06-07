@@ -70,9 +70,6 @@ String.join("S","w","i","f","t")
 "Swift programming".split(delimiter:"r")
 //["Swift p", "og", "amming"]
 
-"Swift programming".containsString("prog")
-// true
-
 "Swift programming".indexOfString("mm")
 // 12
 
