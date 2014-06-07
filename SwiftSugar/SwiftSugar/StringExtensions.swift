@@ -101,15 +101,6 @@ extension String {
         return nil
     }
     
-    func containsString(string:String) -> Bool {
-        if let index = indexOfString(string){
-            return true
-        }
-        else{
-            return false
-        }
-    }
-    
     func reverse() -> String {
         return self.toCharacterArray().reverse().reduce("", combine: {$0 + $1})
     }
