@@ -42,12 +42,12 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 
 **Array functions** 
 ``` swift
-[1,2,3,4].initial()
+[1,2,3,4].take()
 // [1,2,3]
 ```
 
 ``` swift
-[1,2,3,4].initial(2)
+[1,2,3,4].take(2)
 // [1,2]
 ```
 
