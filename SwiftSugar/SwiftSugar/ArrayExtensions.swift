@@ -10,12 +10,17 @@ import Foundation
 
 extension Array {
     
+    func take() -> Array
+    {
+        return self.take(self.count-1)
+    }
+    
     func take(take : Int) -> Array
     {
         var taken = Array()
-        for var i=0; i < take; i++
+        for index in 0..self.count-1
         {
-            taken.append(self[i])
+            taken.append(self[index])
         }
         
         return taken
