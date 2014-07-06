@@ -18,7 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
+        
+        let x = [1,2,3,4,5]
+        let y = x.drop { $0 % 2 == 0 }
 
+        println(y)
         return true
     }
 }

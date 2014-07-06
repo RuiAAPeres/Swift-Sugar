@@ -22,19 +22,4 @@ class IntExtensionsTests: XCTestCase {
         var startingIndex = 0;
         5.timesWithIndex(){index in XCTAssertEqual(index, startingIndex++, "Should be equal")}
     }
-    
-    func testTakeElements (){
-        
-        var result : Array = take([1,2,3], 1)
-        XCTAssertEqual(result[0], 1, "Should be 1")
-        var size = result.count
-        XCTAssertEqual(size, 1, "Should have 1 element")
-
-        var result1 = take([4,3,2,1], 2)
-        XCTAssertEqual(result1[0], 4, "Should be 4")
-        XCTAssertEqual(result1[1], 3, "Should be 3")
-
-        XCTAssertEqual(result1.count, 2, "Should have 2 element")
-
-    }
 }

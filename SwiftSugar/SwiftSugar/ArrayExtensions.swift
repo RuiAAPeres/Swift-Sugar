@@ -10,19 +10,33 @@ import Foundation
 
 extension Array {
     
-    func take() -> Array {
-        return self.take(self.count-1)
+    func initial() -> Array {
+        return self.initial(1)
     }
     
-    func take(take : Int) -> Array {
-        var taken = Array()
-        for index in 0..self.count-1
-        {
-            taken.append(self[index])
+    func initial(initialElements : Int) -> Array {
+        var result = Array()
+        
+        if(initialElements > self.count) {
+            return result
         }
         
-        return taken
+        for index in 0..initialElements
+        {
+            result+=self[index]
+        }
+        
+        return result
     }
     
+    func drop(f : T -> Bool) -> Array {
+        var result : T[] = []
+        for element in self {
+            if(f(element)) {
+                result+=element
+            }
+        }
+        return result
+    }
     
 }

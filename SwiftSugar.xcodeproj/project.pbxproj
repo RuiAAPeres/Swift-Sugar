@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		453158F61940EF4100037838 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453158F51940EF4100037838 /* StringExtensions.swift */; };
 		C715556519428D12004BC4BB /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715556419428D12004BC4BB /* ArrayExtensions.swift */; };
+		C7CF72A31969BDD4000E55A2 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715556419428D12004BC4BB /* ArrayExtensions.swift */; };
+		C7CF72A51969BE21000E55A2 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF72A41969BE21000E55A2 /* ArrayExtensionsTests.swift */; };
 		C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */; };
 		C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2E4193E44390048EAF3 /* AppDelegate.swift */; };
 		C7EDA2EA193E44390048EAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EDA2E6193E44390048EAF3 /* Images.xcassets */; };
@@ -28,6 +30,7 @@
 /* Begin PBXFileReference section */
 		453158F51940EF4100037838 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C715556419428D12004BC4BB /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		C7CF72A41969BE21000E55A2 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
 		C7EDA2C6193E430C0048EAF3 /* SwiftSugar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSugar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D3193E430C0048EAF3 /* SwiftSugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EDA2D8193E430C0048EAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EDA2D9193E430C0048EAF3 /* IntExtensionsTests.swift */,
+				C7CF72A41969BE21000E55A2 /* ArrayExtensionsTests.swift */,
 				C7EDA2D7193E430C0048EAF3 /* Supporting Files */,
 			);
 			path = SwiftSugarTests;
@@ -244,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7EDA2DA193E430C0048EAF3 /* IntExtensionsTests.swift in Sources */,
+				C7CF72A31969BDD4000E55A2 /* ArrayExtensions.swift in Sources */,
 				C7EDA31C193E48CC0048EAF3 /* IntExtensions.swift in Sources */,
+				C7CF72A51969BE21000E55A2 /* ArrayExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
