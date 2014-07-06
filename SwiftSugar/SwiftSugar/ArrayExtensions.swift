@@ -10,13 +10,11 @@ import Foundation
 
 extension Array {
     
-    func take() -> Array
-    {
+    func take() -> Array {
         return self.take(self.count-1)
     }
     
-    func take(take : Int) -> Array
-    {
+    func take(take : Int) -> Array {
         var taken = Array()
         for index in 0..self.count-1
         {
@@ -25,4 +23,6 @@ extension Array {
         
         return taken
     }
+    
+    
 }
