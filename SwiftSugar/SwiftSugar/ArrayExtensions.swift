@@ -21,8 +21,7 @@ extension Array {
             return result
         }
         
-        for index in 0..initialElements
-        {
+        for index in 0..initialElements  {
             result+=self[index]
         }
         
@@ -36,6 +35,20 @@ extension Array {
                 result+=element
             }
         }
+        return result
+    }
+    
+    func remove(firstNumberOfElements : Int) -> Array {
+        var result : T[] = self
+        
+        if(firstNumberOfElements > self.count) {
+            return result
+        }
+        
+        for index in 0..firstNumberOfElements {
+            result.removeAtIndex(index)
+        }
+        
         return result
     }
     

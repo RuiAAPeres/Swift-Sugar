@@ -8,6 +8,33 @@
 
 import UIKit
 
+@objc protocol MyProtocol: NSObjectProtocol {
+    func method()
+}
+
+
+class MyObject : NSObject {
+    var delegate: MyProtocol
+    
+    init(delegate: MyProtocol) {
+        self.delegate = delegate
+        super.init()
+    }
+    
+    func doSomethingWithDelegate() {
+        delegate.method()
+    }
+}
+
+class DelegateClass: NSObject, MyProtocol {
+    func method () {
+        for i in 1...10 {
+            println("Hello!")
+        }
+    }
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
