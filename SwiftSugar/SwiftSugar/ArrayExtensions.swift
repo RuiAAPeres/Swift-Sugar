@@ -52,4 +52,28 @@ extension Array {
         return result
     }
     
+    static func minimum<T : Comparable>(array : T[])-> T {
+        var minimum : T = array[0]
+        
+        for element in array {
+            if element < minimum {
+                minimum = element
+            }
+        }
+        
+        return minimum
+    }
+    
+    static func maximum<T : Comparable>(array : T[])-> T {
+        var maximum : T = array[0]
+        
+        for element in array {
+            if element < maximum {
+                maximum = element
+            }
+        }
+        
+        return maximum
+    }
+    
 }
