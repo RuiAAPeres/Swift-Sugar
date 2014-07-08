@@ -56,6 +56,10 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 // [2,4]
 ```
 
+``` swift
+[1,2,3,4].remove(2)
+// [3,4]
+```
 
 **String functions** 
 ```
