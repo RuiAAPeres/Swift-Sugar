@@ -61,6 +61,11 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 // [3,4]
 ```
 
+``` swift
+Array.minimum([1,2,3,4])
+// 1
+```
+
 **String functions** 
 ```
 
