@@ -66,6 +66,11 @@ Array.minimum([1,2,3,4])
 // 1
 ```
 
+``` swift
+Array.maximum([1,2,3,4])
+// 4
+```
+
 **String functions** 
 ```
 
