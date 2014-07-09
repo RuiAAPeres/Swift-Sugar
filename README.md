@@ -15,21 +15,26 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 // Hello!
 // Hello!
 // Hello!
+```
 
-
+``` swift
 3.timesWithIndex({
     index in println(index)
 })
 // 0
 // 1
 // 2
+```
 
+``` swift
 3.upTo(5,{
     index in println(index)
 })
 // 3
 // 4
+```
 
+``` swift
 5.downTo(0, doTask: {
     index in println(index)
 })
