@@ -72,10 +72,11 @@ Array.maximum([1,2,3,4])
 ```
 
 **String functions** 
-```
 
+``` swift
 "Swift programming".length
 // 17
+
 
 "Swift programming"[1]
 // w
