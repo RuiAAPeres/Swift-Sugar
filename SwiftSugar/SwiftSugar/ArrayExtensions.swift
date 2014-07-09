@@ -68,7 +68,7 @@ extension Array {
         var maximum : T = array[0]
         
         for element in array {
-            if element < maximum {
+            if element > maximum {
                 maximum = element
             }
         }
