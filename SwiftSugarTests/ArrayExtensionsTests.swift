@@ -38,7 +38,7 @@ class ArrayExtensionsTests: XCTestCase {
     func testMinimum (){
      
         var minimum : Int = Array<Int>.minimum([1,2,3,4,5])
-        XCTAssertEqual(minimum, 1, "Should have 0 element")
+        XCTAssertEqual(minimum, 1, "Should be 1")
     }
     
     func testMaximum (){
