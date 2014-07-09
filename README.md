@@ -76,32 +76,48 @@ Array.maximum([1,2,3,4])
 ``` swift
 "Swift programming".length
 // 17
+```
 
-
+``` swift
 "Swift programming"[1]
 // w
+```
 
+``` swift
 "Swift programming"[-4]
 // m
+```
 
+``` swift
 String.join(["S","w","i"])
 //Swi
+```
 
+``` swift
 String.join("S","w","i","f","t")
 //Swift
+```
 
+``` swift
 "Swift programming".split()
 //["Swift", "programming"]
+```
 
+``` swift
 "Swift programming".split(delimiter:"r")
 //["Swift p", "og", "amming"]
+```
 
+``` swift
 "Swift programming".indexOfString("mm")
 // 12
+```
 
+``` swift
 "Swift programming".toCharacterArray()
 //["S","w","i","f","t"," ","p","r","o","g","r","a","m","m","i","n","g",]
 
+``` swift
 "Swift programming".reverse()
 //gnimmargorp tfiwS
 ```
