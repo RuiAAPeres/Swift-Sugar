@@ -44,6 +44,6 @@ class ArrayExtensionsTests: XCTestCase {
     func testMaximum (){
         
         var maximum : Int = Array<Int>.maximum([1,2,3,4,5])
-        XCTAssertEqual(maximum, 5, "Should have 0 element")
+        XCTAssertEqual(maximum, 5, "Should be 5")
     }
 }
