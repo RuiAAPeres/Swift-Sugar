@@ -30,6 +30,11 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertEqual(result.count, 0, "Should have 0 element")
     }
     
+    func testDrop (){
+        var result : Array = [1,2,3].drop({$0 % 2 == 0})
+        XCTAssertEqual(result[0], 2, "Should be 2")
+    }
+    
     func testMinimum (){
      
         var minimum : Int = Array<Int>.minimum([1,2,3,4,5])
