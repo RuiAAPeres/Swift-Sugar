@@ -10,19 +10,19 @@ import Foundation
 
 extension Int {
     func times(repeat: () -> ()){
-        for _ in 0..self {
+        for _ in 0..<self {
             repeat()
         }
     }
     
     func timesWithIndex(repeat: (index:Int) -> ()){
-        for i in 0..self {
+        for i in 0..<self {
             repeat(index: i)
         }
     }
     
     func upTo(upperLimit:Int, doTask:(number:Int) -> ()){
-        for i in self..upperLimit{
+        for i in self..<upperLimit{
             doTask(number: i)
         }
     }

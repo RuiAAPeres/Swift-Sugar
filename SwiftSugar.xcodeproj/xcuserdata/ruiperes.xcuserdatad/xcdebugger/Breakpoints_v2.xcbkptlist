@@ -9,58 +9,60 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftSugarTests/ArrayExtensionsTests.swift"
-            timestampString = "426362243.345608"
+            filePath = "SwiftSugar/SwiftSugar/ArrayExtensions.swift"
+            timestampString = "426578243.956074"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "testTake1Element()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "remove(_:)"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SwiftSugarTests.ArrayExtensionsTests.testTake1Element (SwiftSugarTests.ArrayExtensionsTests)() -&gt; ()"
-                  moduleName = "SwiftSugarTests"
-                  urlString = "file:///Users/ruiperes/Documents/GitHub/SwiftSugar/SwiftSugarTests/ArrayExtensionsTests.swift"
-                  timestampString = "426362243.845308"
+                  symbolName = "Swift.Array.remove &lt;A&gt;(Swift.Array&lt;A&gt;)(Swift.Int) -&gt; Swift.Array&lt;A&gt;"
+                  moduleName = "SwiftSugar"
+                  urlString = "file:///Users/ruiperes/Documents/GitHub/SwiftSugar/SwiftSugar/SwiftSugar/ArrayExtensions.swift"
+                  timestampString = "426578827.930769"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "298">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "30">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SwiftSugarTests.ArrayExtensionsTests.(testTake1Element (SwiftSugarTests.ArrayExtensionsTests) -&gt; () -&gt; ()).(implicit closure #1) with unmangled suffix &quot;_promote0&quot;"
+                  symbolName = "Swift.Array.remove &lt;A&gt;(Swift.Array&lt;A&gt;)(Swift.Int) -&gt; Swift.Array&lt;A&gt;"
                   moduleName = "SwiftSugarTests"
-                  urlString = "file:///Users/ruiperes/Documents/GitHub/SwiftSugar/SwiftSugarTests/ArrayExtensionsTests.swift"
-                  timestampString = "426362243.845661"
+                  urlString = "file:///Users/ruiperes/Documents/GitHub/SwiftSugar/SwiftSugar/SwiftSugar/ArrayExtensions.swift"
+                  timestampString = "426578829.409452"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SwiftSugarTests.ArrayExtensionsTests.(testTake1Element (SwiftSugarTests.ArrayExtensionsTests) -&gt; () -&gt; ()).(implicit closure #2)"
-                  moduleName = "SwiftSugarTests"
-                  urlString = "file:///Users/ruiperes/Documents/GitHub/SwiftSugar/SwiftSugarTests/ArrayExtensionsTests.swift"
-                  timestampString = "426362243.846074"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "8">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "30">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSugar/SwiftSugar/StringExtensions.swift"
+            timestampString = "426578290.990658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "toCharacterArray()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

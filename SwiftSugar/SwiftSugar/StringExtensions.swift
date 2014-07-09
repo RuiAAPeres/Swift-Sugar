@@ -36,9 +36,9 @@ extension String {
     }
     
     
-    func split(delimiter:Character = " ") -> String[]{
+    func split(delimiter:Character = " ") -> [String]{
         
-        var resultArray = String[]()
+        var resultArray = [String]()
         var stringIterator :String=""
         
         for character in self{
@@ -58,8 +58,8 @@ extension String {
     }
     
     
-    func toCharacterArray()->Character[]{
-        var resultArray = Character[]()
+    func toCharacterArray()->[Character]{
+        var resultArray = [Character]()
         
         for char in self{
             resultArray.append(char)

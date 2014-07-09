@@ -21,7 +21,7 @@ extension Array {
             return result
         }
         
-        for index in 0..initialElements  {
+        for index in 0..<initialElements  {
             result+=self[index]
         }
         
@@ -29,7 +29,7 @@ extension Array {
     }
     
     func drop(f : T -> Bool) -> Array {
-        var result : T[] = []
+        var result : [T] = []
         for element in self {
             if(f(element)) {
                 result+=element
@@ -39,20 +39,20 @@ extension Array {
     }
     
     func remove(firstNumberOfElements : Int) -> Array {
-        var result : T[] = self
+        var result : [T] = self
         
         if(firstNumberOfElements > self.count) {
             return result
         }
         
-        for index in 0..firstNumberOfElements {
+        for index in 0..<firstNumberOfElements {
             result.removeAtIndex(index)
         }
         
         return result
     }
     
-    static func minimum<T : Comparable>(array : T[])-> T {
+    static func minimum<T : Comparable>(array : [T])-> T {
         var minimum : T = array[0]
         
         for element in array {
@@ -64,7 +64,7 @@ extension Array {
         return minimum
     }
     
-    static func maximum<T : Comparable>(array : T[])-> T {
+    static func maximum<T : Comparable>(array : [T])-> T {
         var maximum : T = array[0]
         
         for element in array {
