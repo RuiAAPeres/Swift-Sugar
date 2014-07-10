@@ -76,4 +76,16 @@ extension Array {
         return maximum
     }
     
+    static func numberTimesRepeated<T : Comparable>(array : [T], elementInArray : T)-> Int {
+        var repeated : Int = 0
+        
+        for element in array {
+            if element == elementInArray {
+                repeated++
+            }
+        }
+        
+        return repeated
+    }
+
 }

@@ -46,4 +46,10 @@ class ArrayExtensionsTests: XCTestCase {
         var maximum : Int = Array<Int>.maximum([1,2,3,4,5])
         XCTAssertEqual(maximum, 5, "Should be 5")
     }
+    
+    func testNumberTimesRepeated (){
+        
+        var numberTimesRepeated : Int = Array<Int>.numberTimesRepeated([1,2,3,4,5], elementInArray: 2)
+        XCTAssertEqual(numberTimesRepeated, 1, "Should be 1")
+    }
 }
