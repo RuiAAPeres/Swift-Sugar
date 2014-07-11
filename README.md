@@ -77,7 +77,7 @@ Array.maximum([1,2,3,4])
 ```
 
 ``` swift
-Array.numberTimesRepeated([1,2,3,4,1],1)
+[1,2,3,4,1].numberTimesRepeated(1)
 // 2
 ```
 
