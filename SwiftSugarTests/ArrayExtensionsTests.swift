@@ -37,7 +37,7 @@ class ArrayExtensionsTests: XCTestCase {
     
     func testMinimum (){
      
-        var minimum : Int = Array<Int>.minimum([1,2,3,4,5])
+        var minimum : Int = [1,2,3,4,5].minimum()
         XCTAssertEqual(minimum, 1, "Should be 1")
     }
     

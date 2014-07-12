@@ -52,12 +52,14 @@ extension Array {
         return result
     }
     
-    static func minimum<T : Comparable>(array : [T])-> T {
-        var minimum : T = array[0]
+    func minimum<U where U : Comparable>()-> U {
+        var minimum = self[0] as U
         
-        for element in array {
-            if element < minimum {
-                minimum = element
+        for element in self {
+            let castedElement = element as U
+
+            if castedElement < minimum {
+                minimum = castedElement
             }
         }
         
