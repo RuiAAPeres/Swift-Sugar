@@ -49,7 +49,19 @@ class ArrayExtensionsTests: XCTestCase {
     
     func testNumberTimesRepeated (){
         
-        var numberTimesRepeated : Int = Array<Int>.numberTimesRepeated([1,2,3,4,5], elementInArray: 2)
+        var numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(2)
         XCTAssertEqual(numberTimesRepeated, 1, "Should be 1")
+    }
+    
+    func testNumberTimesRepeatedForNotFoundNumber (){
+        
+        var numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(6)
+        XCTAssertEqual(numberTimesRepeated, 0, "Should be 0")
+    }
+    
+    func testNumberTimesRepeatedForMoreThanOnce (){
+        
+        var numberTimesRepeated : Int = [1,2,3,4,5,1].numberTimesRepeated(1)
+        XCTAssertEqual(numberTimesRepeated, 2, "Should be 2")
     }
 }
