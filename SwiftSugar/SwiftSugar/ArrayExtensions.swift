@@ -64,17 +64,19 @@ extension Array {
         return minimum
     }
     
-    static func maximum<T : Comparable>(array : [T])-> T {
-        var maximum : T = array[0]
+    func maximum<U where U : Comparable>()-> U {
+        var maximum = self[0] as U
         
-        for element in array {
-            if element > maximum {
-                maximum = element
+        for element in self {
+            let castedElement = element as U
+            if castedElement > maximum {
+                maximum = castedElement
             }
         }
         
         return maximum
     }
+    
     
     func numberTimesRepeated<U where U : Equatable>(elementInArray : U)-> Int {
         var repeated : Int = 0

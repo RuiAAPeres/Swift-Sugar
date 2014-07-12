@@ -43,7 +43,7 @@ class ArrayExtensionsTests: XCTestCase {
     
     func testMaximum (){
         
-        var maximum : Int = Array<Int>.maximum([1,2,3,4,5])
+        var maximum : Int = [1,2,3,4,5].maximum()
         XCTAssertEqual(maximum, 5, "Should be 5")
     }
     
