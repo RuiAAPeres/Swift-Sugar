@@ -67,7 +67,7 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 ```
 
 ``` swift
-Array.minimum([1,2,3,4])
+[1,2,3,4].minimum()
 // 1
 ```
 
