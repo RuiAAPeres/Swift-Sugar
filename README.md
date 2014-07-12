@@ -72,7 +72,7 @@ Array.minimum([1,2,3,4])
 ```
 
 ``` swift
-Array.maximum([1,2,3,4])
+[1,2,3,4].maximum()
 // 4
 ```
 
