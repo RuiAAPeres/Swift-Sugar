@@ -35,28 +35,11 @@ extension String {
         return result
     }
     
-    
-    func split(delimiter:Character = " ") -> [String]{
-        
-        var resultArray = [String]()
-        var stringIterator :String=""
-        
-        for character in self{
-            if delimiter == character{
-                resultArray.append(stringIterator)
-                stringIterator = ""
-            }
-            else{
-                stringIterator += character
-            }
+    func split(delimiter: Character = " ") -> [String] {
+        return Swift.split(self) { (char: Character) -> Bool in
+            char == delimiter
         }
-        
-        if !stringIterator.isEmpty{
-            resultArray.append(stringIterator)
-        }
-        return resultArray
     }
-    
     
     func toCharacterArray()->[Character]{
         var resultArray = [Character]()
