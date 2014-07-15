@@ -125,7 +125,8 @@ String.join("S","w","i","f","t")
 
 ``` swift
 "Swift programming".toCharacterArray()
-//["S","w","i","f","t"," ","p","r","o","g","r","a","m","m","i","n","g",]
+//["S","w","i","f","t"," ","p","r","o","g","r","a","m","m","i","n","g"]
+```
 
 ``` swift
 "Swift programming".reverse()
