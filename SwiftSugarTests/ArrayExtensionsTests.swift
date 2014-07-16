@@ -64,4 +64,12 @@ class ArrayExtensionsTests: XCTestCase {
         var numberTimesRepeated : Int = [1,2,3,4,5,1].numberTimesRepeated(1)
         XCTAssertEqual(numberTimesRepeated, 2, "Should be 2")
     }
+    
+    func testRemoveElements (){
+        var removed = [1,2,3,4].remove(2)
+        println(removed)
+        XCTAssertTrue(removed == [3, 4], "should be equal")
+        XCTAssertEqual(removed.count, 2, "should have 2 elements")
+    }
+  
 }
