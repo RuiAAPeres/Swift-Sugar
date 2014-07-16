@@ -39,17 +39,8 @@ extension Array {
     }
     
     func remove(firstNumberOfElements : Int) -> Array {
-        var result : [T] = self
         
-        if(firstNumberOfElements > self.count) {
-            return result
-        }
-        
-        for index in 0..<firstNumberOfElements {
-            result.removeAtIndex(index)
-        }
-        
-        return result
+        return Array(self[firstNumberOfElements..<self.count])
     }
     
     func minimum<U where U : Comparable>()-> U {
