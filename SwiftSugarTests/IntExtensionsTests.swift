@@ -12,14 +12,15 @@ class IntExtensionsTests: XCTestCase {
     
     func testTimes (){
         
-        var numberOfTimes = 0;
-        5.times(){numberOfTimes+=1}
+        var numberOfTimes = 0
+        5.times{numberOfTimes+=1}
         XCTAssertEqual(numberOfTimes, 5, "Should be 5")
     }
     
     func testTimesWithIndex (){
         
-        var startingIndex = 0;
-        5.timesWithIndex(){index in XCTAssertEqual(index, startingIndex++, "Should be equal")}
+        var startingIndex = 0
+        5.timesWithIndex{index in XCTAssertEqual(index, startingIndex++, "Should be equal")}
+        XCTAssertEqual(startingIndex, 5, "Should be equal")
     }
 }
