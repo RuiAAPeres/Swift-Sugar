@@ -72,4 +72,31 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertEqual(removed.count, 2, "should have 2 elements")
     }
   
+    func testIntZipWithPlus() {
+        
+        var ziped = zipWith(+, [1,2,3], [5,6,7])
+        var expected = [6, 8, 10]
+        XCTAssertTrue( ziped == expected, "shold be equal")
+    }
+    
+    func testIntZipWithMinus() {
+        
+        var ziped = zipWith(-, [1,6,7], [5,6,4])
+        var expected = [-4, 0, 3]
+        XCTAssertTrue( ziped == expected, "shold be equal")
+    }
+    
+    func testIntZipWithMultiply() {
+        
+        var ziped = zipWith(*, [1,2,3], [5,6,7])
+        var expected = [5, 12, 21]
+        XCTAssertTrue( ziped == expected, "shold be equal")
+    }
+    
+    func testStringZipWithPlus() {
+
+        var ziped = zipWith(+, ["1","2","3"], ["5","6","7"])
+        var expected = ["15","26", "37"]
+        XCTAssertTrue( ziped == expected, "shold be equal")
+    }
 }
