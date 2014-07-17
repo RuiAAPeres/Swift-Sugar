@@ -83,3 +83,13 @@ extension Array {
         return repeated
     }
 }
+
+func zipWith<X, Y, Z : Defaultable>(zipF: (X, Y) -> Z, listX: [X], listY: [Y]) -> [Z] {
+    
+    let count = min(listX.count, listY.count)
+    var result:[Z] = Array(count: count, repeatedValue: Z.defaultValue())
+    for i in 0..<count {
+        result[i] = zipF(listX[i], listY[i])
+    }
+    return result
+}
