@@ -15,6 +15,7 @@
 		C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2E4193E44390048EAF3 /* AppDelegate.swift */; };
 		C7EDA2EA193E44390048EAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EDA2E6193E44390048EAF3 /* Images.xcassets */; };
 		C7EDA31C193E48CC0048EAF3 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */; };
+		C7F201F5197882860085B752 /* SwiftSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F201F4197882860085B752 /* SwiftSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		C7EDA2E6193E44390048EAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7EDA2E8193E44390048EAF3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		C7F201F4197882860085B752 /* SwiftSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				C7EDA2ED193E44500048EAF3 /* IntExtensions.swift */,
 				C715556419428D12004BC4BB /* ArrayExtensions.swift */,
 				453158F51940EF4100037838 /* StringExtensions.swift */,
+				C7F201F4197882860085B752 /* SwiftSugar.swift */,
 			);
 			path = SwiftSugar;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				453158F61940EF4100037838 /* StringExtensions.swift in Sources */,
 				C7EDA2E9193E44390048EAF3 /* AppDelegate.swift in Sources */,
+				C7F201F5197882860085B752 /* SwiftSugar.swift in Sources */,
 				C715556519428D12004BC4BB /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
