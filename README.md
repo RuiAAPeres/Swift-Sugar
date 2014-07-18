@@ -123,6 +123,13 @@ String.join("S","w","i","f","t")
 //gnimmargorp tfiwS
 ```
 
+**Swift Sugar (Global functions)** 
+
+``` swift
+let x : [(Int,Int)] = zip([1,2,3,4,5], [1,2,3])
+// [(1,1),(2,2),(3,3)]
+```
+
 ### Swift (Global functions)
 ---
 
