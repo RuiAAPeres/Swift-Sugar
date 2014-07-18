@@ -67,16 +67,6 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 ```
 
 ``` swift
-[1,2,3,4].minimum()
-// 1
-```
-
-``` swift
-[1,2,3,4].maximum()
-// 4
-```
-
-``` swift
 [1,2,3,4,1].numberTimesRepeated(1)
 // 2
 ```
@@ -132,6 +122,22 @@ String.join("S","w","i","f","t")
 "Swift programming".reverse()
 //gnimmargorp tfiwS
 ```
+
+### Swift (Global functions)
+---
+
+**Collections**  
+``` swift
+minElement([1,2,3,4])
+// 1
+```
+
+``` swift
+manElement([1,2,3,4])
+//4
+```
+
+
 
 
 
