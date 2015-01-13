@@ -23,16 +23,6 @@ extension Array {
         return Array(self[0..<initialElements])
     }
     
-//    func drop(f : T -> Bool) -> Array {
-//        var result : [T] = []
-//        for element in self {
-//            if(f(element)) {
-//                result+=element
-//            }
-//        }
-//        return result
-//    }
-    
     func remove(firstNumberOfElements : Int) -> Array {
         
         return Array(self[firstNumberOfElements..<self.count])
