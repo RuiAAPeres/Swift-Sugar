@@ -8,33 +8,6 @@
 
 import UIKit
 
-@objc protocol MyProtocol: NSObjectProtocol {
-    func method()
-}
-
-
-class MyObject : NSObject {
-    var delegate: MyProtocol
-    
-    init(delegate: MyProtocol) {
-        self.delegate = delegate
-        super.init()
-    }
-    
-    func doSomethingWithDelegate() {
-        delegate.method()
-    }
-}
-
-class DelegateClass: NSObject, MyProtocol {
-    func method () {
-        for i in 1...10 {
-            println("Hello!")
-        }
-    }
-}
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -46,10 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         
-        let x = [1,2,3,4,5]
-        let y = x.drop { $0 % 2 == 0 }
-
-        println(y)
         return true
     }
 }

@@ -84,9 +84,9 @@ extension String {
         return nil
     }
     
-    func reverse() -> String {
-        return self.toCharacterArray().reverse().reduce("", combine: {$0 + $1})
-    }
+//    func reverse() -> String {
+//        return self.toCharacterArray().reverse().reduce("", combine: {$0 + $1})
+//    }
 }
 
 extension String{

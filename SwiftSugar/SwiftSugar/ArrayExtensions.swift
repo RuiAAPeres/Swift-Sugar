@@ -15,28 +15,23 @@ extension Array {
     }
     
     func initial(initialElements : Int) -> Array {
-        var result = Array()
         
         if(initialElements > self.count) {
-            return result
+            return self
         }
         
-        for index in 0..<initialElements  {
-            result+=self[index]
-        }
-        
-        return result
+        return Array(self[0..<initialElements])
     }
     
-    func drop(f : T -> Bool) -> Array {
-        var result : [T] = []
-        for element in self {
-            if(f(element)) {
-                result+=element
-            }
-        }
-        return result
-    }
+//    func drop(f : T -> Bool) -> Array {
+//        var result : [T] = []
+//        for element in self {
+//            if(f(element)) {
+//                result+=element
+//            }
+//        }
+//        return result
+//    }
     
     func remove(firstNumberOfElements : Int) -> Array {
         
