@@ -28,34 +28,6 @@ extension Array {
         return Array(self[firstNumberOfElements..<self.count])
     }
     
-    func minimum<U where U : Comparable>()-> U {
-        var minimum = self[0] as U
-        
-        for element in self {
-            let castedElement = element as U
-
-            if castedElement < minimum {
-                minimum = castedElement
-            }
-        }
-        
-        return minimum
-    }
-    
-    func maximum<U where U : Comparable>()-> U {
-        var maximum = self[0] as U
-        
-        for element in self {
-            let castedElement = element as U
-            if castedElement > maximum {
-                maximum = castedElement
-            }
-        }
-        
-        return maximum
-    }
-    
-    
     func numberTimesRepeated<U where U : Equatable>(elementInArray : U)-> Int {
         var repeated : Int = 0
         
