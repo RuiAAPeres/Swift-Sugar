@@ -26,43 +26,43 @@ class ArrayExtensionsTests: XCTestCase {
     
     func testTakeMoreElementsThanArrayHas (){
         
-        var result : Array = [1,2,3].initial(4)
+        let result : Array = [1,2,3].initial(4)
         XCTAssertEqual(result.count, 3, "Should have 0 element")
     }
     
     func testMinimum (){
      
-        var minimum : Int = [1,2,3,4,5].minimum()
+        let minimum : Int = [1,2,3,4,5].minimum()
         XCTAssertEqual(minimum, 1, "Should be 1")
     }
     
     func testMaximum (){
         
-        var maximum : Int = [1,2,3,4,5].maximum()
+        let maximum : Int = [1,2,3,4,5].maximum()
         XCTAssertEqual(maximum, 5, "Should be 5")
     }
     
     func testNumberTimesRepeated (){
         
-        var numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(2)
+        let numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(2)
         XCTAssertEqual(numberTimesRepeated, 1, "Should be 1")
     }
     
     func testNumberTimesRepeatedForNotFoundNumber (){
         
-        var numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(6)
+        let numberTimesRepeated : Int = [1,2,3,4,5].numberTimesRepeated(6)
         XCTAssertEqual(numberTimesRepeated, 0, "Should be 0")
     }
     
     func testNumberTimesRepeatedForMoreThanOnce (){
         
-        var numberTimesRepeated : Int = [1,2,3,4,5,1].numberTimesRepeated(1)
+        let numberTimesRepeated : Int = [1,2,3,4,5,1].numberTimesRepeated(1)
         XCTAssertEqual(numberTimesRepeated, 2, "Should be 2")
     }
     
     func testRemoveElements (){
-        var removed = [1,2,3,4].remove(2)
-        println(removed)
+        let removed = [1,2,3,4].remove(2)
+        print(removed)
         XCTAssertTrue(removed == [3, 4], "should be equal")
         XCTAssertEqual(removed.count, 2, "should have 2 elements")
     }

@@ -29,10 +29,10 @@ extension Array {
     }
     
     func minimum<U where U : Comparable>()-> U {
-        var minimum = self[0] as U
+        var minimum = self[0] as! U
         
         for element in self {
-            let castedElement = element as U
+            let castedElement = element as! U
 
             if castedElement < minimum {
                 minimum = castedElement
@@ -43,10 +43,10 @@ extension Array {
     }
     
     func maximum<U where U : Comparable>()-> U {
-        var maximum = self[0] as U
+        var maximum = self[0] as! U
         
         for element in self {
-            let castedElement = element as U
+            let castedElement = element as! U
             if castedElement > maximum {
                 maximum = castedElement
             }
@@ -60,7 +60,7 @@ extension Array {
         var repeated : Int = 0
         
         for element in self {
-            if element as U == elementInArray {
+            if element as! U == elementInArray {
                 repeated++
             }
         }

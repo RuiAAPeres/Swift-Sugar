@@ -9,15 +9,15 @@
 import Foundation
 
 extension Int {
-    func times(repeat: () -> ()){
+    func times(`repeat`: () -> ()){
         for _ in 0..<self {
-            repeat()
+            `repeat`()
         }
     }
     
-    func timesWithIndex(repeat: (index:Int) -> ()){
+    func timesWithIndex(`repeat`: (index:Int) -> ()){
         for i in 0..<self {
-            repeat(index: i)
+            `repeat`(index: i)
         }
     }
     
@@ -30,7 +30,7 @@ extension Int {
     func downTo(lowerLimit:Int, doTask:(number:Int) -> ()){
         var placeHolder = self
         
-        for var i : Int = lowerLimit; i < placeHolder; placeHolder-- {
+        for let i : Int = lowerLimit; i < placeHolder; placeHolder-- {
             doTask(number: placeHolder)
         }
     }

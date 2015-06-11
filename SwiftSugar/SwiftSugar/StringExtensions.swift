@@ -12,9 +12,7 @@ extension String {
     
     var length :Int
     {
-    get{
-        return countElements(self)
-    }
+        return self.utf8.count
     }
     
     static func join(strings: String...)->String
@@ -35,16 +33,11 @@ extension String {
         return result
     }
     
-    func split(delimiter: Character = " ") -> [String] {
-        return Swift.split(self) { (char: Character) -> Bool in
-            char == delimiter
-        }
-    }
     
     func toCharacterArray()->[Character]{
         var resultArray = [Character]()
         
-        for char in self{
+        for char in self.characters{
             resultArray.append(char)
         }
         
@@ -53,25 +46,25 @@ extension String {
     
     
     func indexOfString(string : String)->Int?{
-        if countElements(self)==0 || countElements(string)==0 {
+        if self.length == 0 || string.length == 0 {
             return nil
         }
         
-        if countElements(self) < countElements(string){
+        if self.length < string.length{
             return nil
         }
         
         var numberIt : Int = 0
         var selfCharArray = self.toCharacterArray()
-        var stringCharArray = string.toCharacterArray()
+        let stringCharArray = string.toCharacterArray()
         
-        for (index,charOut) in enumerate(selfCharArray){
+        for (index,_) in selfCharArray.enumerate(){
             
             for charIn in stringCharArray{
                 
                 if charIn==selfCharArray[index+numberIt] {
                     numberIt++
-                    if numberIt==countElements(string){
+                    if numberIt == string.length{
                         return index
                     }
                 }
@@ -93,14 +86,14 @@ extension String{
     subscript(index: Int) -> String? {
         var castedIndex:Int = index
             if index<0{
-                castedIndex = countElements(self)+index
+                castedIndex = self.length + index
             }
             
-            if (castedIndex>countElements(self) || castedIndex<0){
+            if (castedIndex > self.length || castedIndex<0){
                 return nil
             }
             
-            for (charIndex,charValue) in enumerate(self){
+            for (charIndex,charValue) in self.characters.enumerate(){
                 if(charIndex == castedIndex){
                     return String(charValue)
                 }
@@ -111,7 +104,7 @@ extension String{
     
     subscript(startIndex: Int,endIndex: Int) -> String? {
         var returnString :String = ""
-            for (charIndex,charValue) in enumerate(self){
+            for (charIndex,charValue) in self.characters.enumerate(){
                 if(charIndex >= startIndex &&  charIndex <= endIndex){
                     returnString = returnString + String(charValue)
                 }
