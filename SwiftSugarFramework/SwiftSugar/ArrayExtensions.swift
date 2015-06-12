@@ -2,24 +2,11 @@
 //  ArrayExtensions.swift
 //  SwiftSugar
 //
-//  Created by Rui Peres on 07/06/2014.
-//  Copyright (c) 2014 SF. All rights reserved.
+//  Created by Rui Peres on 11/06/2015.
+//  Copyright © 2015 SF. All rights reserved.
 //
 
 import Foundation
-
-extension SequenceType where Generator.Element : Equatable {
-    func numberTimesRepeated(elementInArray : Generator.Element)-> Int {
-        var repeated : Int = 0
-        
-        for element in self
-            where element == elementInArray {
-                repeated++
-        }
-        
-        return repeated
-    }
-}
 
 extension Array {
     
@@ -34,8 +21,6 @@ extension Array {
     }
     
     func remove(firstNumberOfElements : Int) -> Array {
-        
         return Array(self[firstNumberOfElements..<self.count])
     }
-    
 }
