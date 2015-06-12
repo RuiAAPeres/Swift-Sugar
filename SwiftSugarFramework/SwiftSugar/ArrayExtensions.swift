@@ -28,10 +28,7 @@ extension Array {
     }
     
     func initial(initialElements : Int) -> Array {
-        
-        if(initialElements > self.count) {
-            return self
-        }
+        guard initialElements > self.count else { return self}
         
         return Array(self[0..<initialElements])
     }
