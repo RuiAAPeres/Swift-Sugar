@@ -8,35 +8,18 @@
 
 import Foundation
 
-
 extension SequenceType where Generator.Element : Equatable {
     func numberTimesRepeated(elementInArray : Generator.Element)-> Int {
         var repeated : Int = 0
         
-        for element in self {
-            if element == elementInArray {
+        for element in self
+            where element == elementInArray {
                 repeated++
-            }
         }
         
         return repeated
     }
 }
-
-extension SequenceType where Generator.Element : Comparable {
-    func numberTimesRepeated(elementInArray : Generator.Element)-> Int {
-        var repeated : Int = 0
-        
-        for element in self {
-            if element == elementInArray {
-                repeated++
-            }
-        }
-        
-        return repeated
-    }
-}
-
 
 extension Array {
     

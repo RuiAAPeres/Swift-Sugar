@@ -8,6 +8,8 @@
 
 import XCTest
 
+@testable import SwiftSugarFramework
+
 class IntExtensionsTests: XCTestCase {
     
     func testTimes (){
