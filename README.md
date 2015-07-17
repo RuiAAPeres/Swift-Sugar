@@ -9,35 +9,35 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 **Int extensions** 
 
 ``` swift
-3.times({
+3.times {
     println("Hello!")
-})
+}
 // Hello!
 // Hello!
 // Hello!
 ```
 
 ``` swift
-3.timesWithIndex({
+3.timesWithIndex {
     index in println(index)
-})
+}
 // 0
 // 1
 // 2
 ```
 
 ``` swift
-3.upTo(5,{
+3.upTo(5) {
     index in println(index)
-})
+}
 // 3
 // 4
 ```
 
 ``` swift
-5.downTo(0, doTask: {
+5.downTo(0) {
     index in println(index)
-})
+}
 // 5
 // 4
 // 3
@@ -57,7 +57,7 @@ Swift Sugar is heavily inspired on [ObjectiveSugar](https://github.com/supermari
 ```
 
 ``` swift
-[1,2,3,4].drop(){$0 % 2 ==0}
+[1,2,3,4].drop {$0 % 2 ==0}
 // [2,4]
 ```
 
@@ -139,17 +139,3 @@ String.join("S","w","i","f","t")
 let x : [(Int,Int)] = zip([1,2,3,4,5], [1,2,3])
 // [(1,1),(2,2),(3,3)]
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
