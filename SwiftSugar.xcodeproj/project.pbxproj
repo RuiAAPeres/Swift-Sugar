@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2A4FED71B2A5954005D072C /* SwiftSugarFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A4FED61B2A5954005D072C /* SwiftSugarFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2A4FEDE1B2A5954005D072C /* SwiftSugarFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4FED41B2A5954005D072C /* SwiftSugarFramework.framework */; };
-		B2A4FF011B2A5A5B005D072C /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FEFD1B2A5A5B005D072C /* SequenceTypeExtensions.swift */; };
-		B2A4FF031B2A5A5B005D072C /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FEFE1B2A5A5B005D072C /* IntExtensions.swift */; };
-		B2A4FF051B2A5A5B005D072C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FEFF1B2A5A5B005D072C /* StringExtensions.swift */; };
-		B2A4FF071B2A5A5B005D072C /* SwiftSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FF001B2A5A5B005D072C /* SwiftSugar.swift */; };
-		B2A4FF0B1B2A5A7A005D072C /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FF091B2A5A7A005D072C /* ArrayExtensionsTests.swift */; };
-		B2A4FF0C1B2A5A7A005D072C /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4FF0A1B2A5A7A005D072C /* IntExtensionsTests.swift */; };
-		B2D8A5281B2A6DA800AB5B17 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D8A5271B2A6DA800AB5B17 /* ArrayExtensions.swift */; };
+		B2A4FEDE1B2A5954005D072C /* SwiftSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A4FED41B2A5954005D072C /* SwiftSugar.framework */; };
+		C7EC1DB31C342C2400BA1261 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DA91C342C1A00BA1261 /* ArrayExtensions.swift */; };
+		C7EC1DB41C342C2400BA1261 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DAA1C342C1A00BA1261 /* IntExtensions.swift */; };
+		C7EC1DB51C342C2400BA1261 /* SequenceTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DAB1C342C1A00BA1261 /* SequenceTypeExtensions.swift */; };
+		C7EC1DB61C342C2400BA1261 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DAC1C342C1A00BA1261 /* StringExtensions.swift */; };
+		C7EC1DB71C342C2400BA1261 /* SwiftSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DAD1C342C1A00BA1261 /* SwiftSugar.swift */; };
+		C7EC1DB81C342C3300BA1261 /* ArrayExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DB01C342C1A00BA1261 /* ArrayExtensionsTests.swift */; };
+		C7EC1DB91C342C3300BA1261 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EC1DB21C342C1A00BA1261 /* IntExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B2A4FED41B2A5954005D072C /* SwiftSugarFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSugarFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2A4FED61B2A5954005D072C /* SwiftSugarFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSugarFramework.h; sourceTree = "<group>"; };
-		B2A4FED81B2A5954005D072C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2A4FEDD1B2A5954005D072C /* SwiftSugarFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSugarFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2A4FEE41B2A5954005D072C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2A4FEFD1B2A5A5B005D072C /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
-		B2A4FEFE1B2A5A5B005D072C /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
-		B2A4FEFF1B2A5A5B005D072C /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		B2A4FF001B2A5A5B005D072C /* SwiftSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSugar.swift; sourceTree = "<group>"; };
-		B2A4FF091B2A5A7A005D072C /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
-		B2A4FF0A1B2A5A7A005D072C /* IntExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
-		B2D8A5271B2A6DA800AB5B17 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		B2A4FED41B2A5954005D072C /* SwiftSugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A4FEDD1B2A5954005D072C /* SwiftSugarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSugarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7EC1DA71C342C1A00BA1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7EC1DA91C342C1A00BA1261 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		C7EC1DAA1C342C1A00BA1261 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		C7EC1DAB1C342C1A00BA1261 /* SequenceTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTypeExtensions.swift; sourceTree = "<group>"; };
+		C7EC1DAC1C342C1A00BA1261 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C7EC1DAD1C342C1A00BA1261 /* SwiftSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSugar.swift; sourceTree = "<group>"; };
+		C7EC1DAE1C342C1A00BA1261 /* SwiftSugarFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSugarFramework.h; sourceTree = "<group>"; };
+		C7EC1DB01C342C1A00BA1261 /* ArrayExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionsTests.swift; sourceTree = "<group>"; };
+		C7EC1DB11C342C1A00BA1261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7EC1DB21C342C1A00BA1261 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,50 +54,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A4FEDE1B2A5954005D072C /* SwiftSugarFramework.framework in Frameworks */,
+				B2A4FEDE1B2A5954005D072C /* SwiftSugar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B2A4FED51B2A5954005D072C /* SwiftSugarFramework */ = {
+		C7EC1DA61C342C1A00BA1261 /* SwiftSugar */ = {
 			isa = PBXGroup;
 			children = (
-				B2A4FEFC1B2A5A5B005D072C /* SwiftSugar */,
-				B2A4FED61B2A5954005D072C /* SwiftSugarFramework.h */,
-				B2A4FED81B2A5954005D072C /* Info.plist */,
-			);
-			path = SwiftSugarFramework;
-			sourceTree = "<group>";
-		};
-		B2A4FEE11B2A5954005D072C /* SwiftSugarFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				B2A4FF091B2A5A7A005D072C /* ArrayExtensionsTests.swift */,
-				B2A4FF0A1B2A5A7A005D072C /* IntExtensionsTests.swift */,
-				B2A4FEE41B2A5954005D072C /* Info.plist */,
-			);
-			path = SwiftSugarFrameworkTests;
-			sourceTree = "<group>";
-		};
-		B2A4FEFC1B2A5A5B005D072C /* SwiftSugar */ = {
-			isa = PBXGroup;
-			children = (
-				B2A4FEFD1B2A5A5B005D072C /* SequenceTypeExtensions.swift */,
-				B2D8A5271B2A6DA800AB5B17 /* ArrayExtensions.swift */,
-				B2A4FEFE1B2A5A5B005D072C /* IntExtensions.swift */,
-				B2A4FEFF1B2A5A5B005D072C /* StringExtensions.swift */,
-				B2A4FF001B2A5A5B005D072C /* SwiftSugar.swift */,
+				C7EC1DA71C342C1A00BA1261 /* Info.plist */,
+				C7EC1DA81C342C1A00BA1261 /* SwiftSugar */,
+				C7EC1DAE1C342C1A00BA1261 /* SwiftSugarFramework.h */,
 			);
 			path = SwiftSugar;
+			sourceTree = "<group>";
+		};
+		C7EC1DA81C342C1A00BA1261 /* SwiftSugar */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC1DA91C342C1A00BA1261 /* ArrayExtensions.swift */,
+				C7EC1DAA1C342C1A00BA1261 /* IntExtensions.swift */,
+				C7EC1DAB1C342C1A00BA1261 /* SequenceTypeExtensions.swift */,
+				C7EC1DAC1C342C1A00BA1261 /* StringExtensions.swift */,
+				C7EC1DAD1C342C1A00BA1261 /* SwiftSugar.swift */,
+			);
+			path = SwiftSugar;
+			sourceTree = "<group>";
+		};
+		C7EC1DAF1C342C1A00BA1261 /* SwiftSugarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC1DB01C342C1A00BA1261 /* ArrayExtensionsTests.swift */,
+				C7EC1DB21C342C1A00BA1261 /* IntExtensionsTests.swift */,
+				C7EC1DB11C342C1A00BA1261 /* Info.plist */,
+			);
+			path = SwiftSugarTests;
 			sourceTree = "<group>";
 		};
 		C7EDA2BD193E430C0048EAF3 = {
 			isa = PBXGroup;
 			children = (
-				B2A4FED51B2A5954005D072C /* SwiftSugarFramework */,
-				B2A4FEE11B2A5954005D072C /* SwiftSugarFrameworkTests */,
+				C7EC1DA61C342C1A00BA1261 /* SwiftSugar */,
+				C7EC1DAF1C342C1A00BA1261 /* SwiftSugarTests */,
 				C7EDA2C7193E430C0048EAF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,8 +105,8 @@
 		C7EDA2C7193E430C0048EAF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2A4FED41B2A5954005D072C /* SwiftSugarFramework.framework */,
-				B2A4FEDD1B2A5954005D072C /* SwiftSugarFrameworkTests.xctest */,
+				B2A4FED41B2A5954005D072C /* SwiftSugar.framework */,
+				B2A4FEDD1B2A5954005D072C /* SwiftSugarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,16 +118,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A4FED71B2A5954005D072C /* SwiftSugarFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B2A4FED31B2A5954005D072C /* SwiftSugarFramework */ = {
+		B2A4FED31B2A5954005D072C /* SwiftSugar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2A4FEE51B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarFramework" */;
+			buildConfigurationList = B2A4FEE51B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugar" */;
 			buildPhases = (
 				B2A4FECF1B2A5954005D072C /* Sources */,
 				B2A4FED01B2A5954005D072C /* Frameworks */,
@@ -139,14 +137,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftSugarFramework;
+			name = SwiftSugar;
 			productName = SwiftSugarFramework;
-			productReference = B2A4FED41B2A5954005D072C /* SwiftSugarFramework.framework */;
+			productReference = B2A4FED41B2A5954005D072C /* SwiftSugar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B2A4FEDC1B2A5954005D072C /* SwiftSugarFrameworkTests */ = {
+		B2A4FEDC1B2A5954005D072C /* SwiftSugarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2A4FEE81B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarFrameworkTests" */;
+			buildConfigurationList = B2A4FEE81B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarTests" */;
 			buildPhases = (
 				B2A4FED91B2A5954005D072C /* Sources */,
 				B2A4FEDA1B2A5954005D072C /* Frameworks */,
@@ -157,9 +155,9 @@
 			dependencies = (
 				B2A4FEE01B2A5954005D072C /* PBXTargetDependency */,
 			);
-			name = SwiftSugarFrameworkTests;
+			name = SwiftSugarTests;
 			productName = SwiftSugarFrameworkTests;
-			productReference = B2A4FEDD1B2A5954005D072C /* SwiftSugarFrameworkTests.xctest */;
+			productReference = B2A4FEDD1B2A5954005D072C /* SwiftSugarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,8 +190,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2A4FED31B2A5954005D072C /* SwiftSugarFramework */,
-				B2A4FEDC1B2A5954005D072C /* SwiftSugarFrameworkTests */,
+				B2A4FED31B2A5954005D072C /* SwiftSugar */,
+				B2A4FEDC1B2A5954005D072C /* SwiftSugarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,11 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A4FF011B2A5A5B005D072C /* SequenceTypeExtensions.swift in Sources */,
-				B2D8A5281B2A6DA800AB5B17 /* ArrayExtensions.swift in Sources */,
-				B2A4FF071B2A5A5B005D072C /* SwiftSugar.swift in Sources */,
-				B2A4FF051B2A5A5B005D072C /* StringExtensions.swift in Sources */,
-				B2A4FF031B2A5A5B005D072C /* IntExtensions.swift in Sources */,
+				C7EC1DB61C342C2400BA1261 /* StringExtensions.swift in Sources */,
+				C7EC1DB31C342C2400BA1261 /* ArrayExtensions.swift in Sources */,
+				C7EC1DB71C342C2400BA1261 /* SwiftSugar.swift in Sources */,
+				C7EC1DB51C342C2400BA1261 /* SequenceTypeExtensions.swift in Sources */,
+				C7EC1DB41C342C2400BA1261 /* IntExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A4FF0C1B2A5A7A005D072C /* IntExtensionsTests.swift in Sources */,
-				B2A4FF0B1B2A5A7A005D072C /* ArrayExtensionsTests.swift in Sources */,
+				C7EC1DB81C342C3300BA1261 /* ArrayExtensionsTests.swift in Sources */,
+				C7EC1DB91C342C3300BA1261 /* IntExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		B2A4FEE01B2A5954005D072C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B2A4FED31B2A5954005D072C /* SwiftSugarFramework */;
+			target = B2A4FED31B2A5954005D072C /* SwiftSugar */;
 			targetProxy = B2A4FEDF1B2A5954005D072C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -258,12 +256,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftSugarFramework/Info.plist;
+				INFOPLIST_FILE = SwiftSugar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.SwiftSugarFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.SwiftSugar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,12 +281,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftSugarFramework/Info.plist;
+				INFOPLIST_FILE = SwiftSugar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruiperes.SwiftSugarFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sf.SwiftSugar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,7 +300,7 @@
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftSugarFrameworkTests/Info.plist;
+				INFOPLIST_FILE = SwiftSugarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -317,7 +315,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = SwiftSugarFrameworkTests/Info.plist;
+				INFOPLIST_FILE = SwiftSugarTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -407,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2A4FEE51B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarFramework" */ = {
+		B2A4FEE51B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2A4FEE61B2A5954005D072C /* Debug */,
@@ -416,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2A4FEE81B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarFrameworkTests" */ = {
+		B2A4FEE81B2A5954005D072C /* Build configuration list for PBXNativeTarget "SwiftSugarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2A4FEE91B2A5954005D072C /* Debug */,
