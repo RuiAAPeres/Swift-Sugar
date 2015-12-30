@@ -65,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				C7EC1DA71C342C1A00BA1261 /* Info.plist */,
-				C7EC1DA81C342C1A00BA1261 /* SwiftSugar */,
 				C7EC1DAE1C342C1A00BA1261 /* SwiftSugarFramework.h */,
+				C7EC1DA81C342C1A00BA1261 /* SwiftSugar */,
 			);
 			path = SwiftSugar;
 			sourceTree = "<group>";

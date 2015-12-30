@@ -29,6 +29,7 @@ extension String {
     static func join(array: Array<String>) -> String {
         
         var result: String = ""
+        
         for value in array {
             result += value
         }
@@ -62,7 +63,7 @@ extension String {
             for charIn in stringCharArray {
                 
                 if charIn == selfCharArray[index+numberIt] {
-                    numberIt++
+                    numberIt += 1
                     if numberIt == string.length {
                         return index
                     }
@@ -88,7 +89,7 @@ extension String {
             castedIndex = self.length + index
         }
         
-        if (castedIndex > self.length || castedIndex<0) {
+        if (castedIndex > self.length || castedIndex < 0) {
             return nil
         }
         
@@ -105,6 +106,7 @@ extension String {
         var returnString: String = ""
         
         for (charIndex,charValue) in self.characters.enumerate()
+            
             where charIndex >= startIndex &&  charIndex <= endIndex {
                 returnString = returnString + String(charValue)
         }
