@@ -10,19 +10,24 @@ import Foundation
 
 extension String {
     
-    var length :Int {
+    var length: Int {
+        
         return self.utf8.count
     }
     
     static func join(strings: String...) -> String {
+        
         var result: String = ""
+        
         for value in strings {
             result += value
         }
+        
         return result
     }
     
     static func join(array: Array<String>) -> String {
+        
         var result: String = ""
         for value in array {
             result += value
@@ -32,15 +37,18 @@ extension String {
     
     
     func toCharacterArray() -> [Character] {
+        
         var resultArray = [Character]()
+        
         for char in self.characters {
             resultArray.append(char)
         }
+        
         return resultArray
     }
     
     
-    func indexOfString(string : String) -> Int? {
+    func indexOfString(string: String) -> Int? {
         
         guard self.length == 0 || self.length == 0 else { return nil }
         guard self.length < string.length else { return nil }
@@ -71,13 +79,16 @@ extension String {
 }
 
 extension String {
+    
     subscript(index: Int) -> String? {
+        
         var castedIndex:Int = index
+        
         if index < 0 {
             castedIndex = self.length + index
         }
         
-        if (castedIndex > self.length || castedIndex<0){
+        if (castedIndex > self.length || castedIndex<0) {
             return nil
         }
         
@@ -89,8 +100,10 @@ extension String {
         return nil
     }
     
-    subscript(startIndex: Int,endIndex: Int) -> String? {
-        var returnString :String = ""
+    subscript(startIndex: Int, endIndex: Int) -> String? {
+        
+        var returnString: String = ""
+        
         for (charIndex,charValue) in self.characters.enumerate()
             where charIndex >= startIndex &&  charIndex <= endIndex {
                 returnString = returnString + String(charValue)

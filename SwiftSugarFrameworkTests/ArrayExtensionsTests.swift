@@ -13,7 +13,7 @@ class ArrayExtensionsTests: XCTestCase {
 
     func testTake1Element (){
         
-        var result : Array = [1,2,3].initial(1)
+        var result: Array = [1,2,3].initial(1)
         XCTAssertEqual(result[0], 1, "Should be 1")
         XCTAssertEqual(result.count, 1, "Should have 1 element")
     }
@@ -55,5 +55,4 @@ class ArrayExtensionsTests: XCTestCase {
         XCTAssertTrue(removed == [3, 4], "should be equal")
         XCTAssertEqual(removed.count, 2, "should have 2 elements")
     }
-  
 }

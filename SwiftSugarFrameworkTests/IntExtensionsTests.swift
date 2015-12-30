@@ -7,43 +7,54 @@
 //
 
 import XCTest
-
 @testable import SwiftSugarFramework
 
 class IntExtensionsTests: XCTestCase {
     
-    func testTimes (){
+    func testTimes() {
         
         var numberOfTimes = 0
         5.times{numberOfTimes+=1}
         XCTAssertEqual(numberOfTimes, 5, "Should be 5")
     }
     
-    func testTimesWithIndex (){
+    func testTimesWithIndex() {
         
         var startingIndex = 0
-        5.timesWithIndex{index in XCTAssertEqual(index, startingIndex++, "Should be equal")}
+        
+        5.timesWithIndex {
+            XCTAssertEqual($0, startingIndex, "Should be equal")
+            startingIndex += 1
+        }
+        
         XCTAssertEqual(startingIndex, 5, "Should be equal")
     }
-  
-    func testUpTo(){
+
+    func testUpTo() {
       
         var numberOfTimes = 0
         var startingIndex = 1
-        startingIndex.upTo(3, doTask: {index in
-            numberOfTimes++
-            XCTAssertEqual(index, startingIndex++, "Should be equal") })
+        
+        startingIndex.upTo(3, doTask: {
+            numberOfTimes += 1
+            XCTAssertEqual($0, startingIndex, "Should be equal")
+            startingIndex += 1
+        })
+        
         XCTAssertEqual(numberOfTimes, 2, "Should be called 2 times")
     }
-  
+
     func testDownTo(){
       
         var numberOfTimes = 0
         var startingIndex = 4
-        startingIndex.downTo(1, doTask: {index in
-            numberOfTimes++
-            XCTAssertEqual(index, startingIndex--, "Should be equal") })
-        XCTAssertEqual(numberOfTimes, 3, "Should be called 2 times")
+        
+        startingIndex.downTo(1, doTask: {
+            numberOfTimes += 1
+            XCTAssertEqual($0, startingIndex, "Should be equal")
+            startingIndex -= 1
+        })
+        
+        XCTAssertEqual(numberOfTimes, 4, "Should be called 2 times")
     }
-  
 }
