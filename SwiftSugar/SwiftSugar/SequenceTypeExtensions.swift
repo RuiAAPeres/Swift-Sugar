@@ -10,7 +10,7 @@ import Foundation
 
 extension SequenceType where Generator.Element: Equatable {
     
-    func numberTimesRepeated(elementInArray : Generator.Element)-> Int {
+    public func numberTimesRepeated(elementInArray : Generator.Element)-> Int {
         
         var repeated : Int = 0
         

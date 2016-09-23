@@ -10,12 +10,12 @@ import Foundation
 
 extension String {
     
-    var length: Int {
+    public var length: Int {
         
         return self.utf8.count
     }
     
-    static func join(strings: String...) -> String {
+    public static func join(strings: String...) -> String {
         
         var result: String = ""
         
@@ -26,7 +26,7 @@ extension String {
         return result
     }
     
-    static func join(array: Array<String>) -> String {
+    public static func join(array: Array<String>) -> String {
         
         var result: String = ""
         
@@ -37,7 +37,7 @@ extension String {
     }
     
     
-    func toCharacterArray() -> [Character] {
+    public func toCharacterArray() -> [Character] {
         
         var resultArray = [Character]()
         
@@ -49,7 +49,7 @@ extension String {
     }
     
     
-    func indexOfString(string: String) -> Int? {
+    public func indexOfString(string: String) -> Int? {
         
         guard self.length == 0 || self.length == 0 else { return nil }
         guard self.length < string.length else { return nil }
@@ -81,7 +81,7 @@ extension String {
 
 extension String {
     
-    subscript(index: Int) -> String? {
+    public subscript(index: Int) -> String? {
         
         var castedIndex:Int = index
         
@@ -101,7 +101,7 @@ extension String {
         return nil
     }
     
-    subscript(startIndex: Int, endIndex: Int) -> String? {
+    public subscript(startIndex: Int, endIndex: Int) -> String? {
         
         var returnString: String = ""
         
